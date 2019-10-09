@@ -171,7 +171,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.UTTERANCES_API = void 0;
-var UTTERANCES_API = 'https://api.utteranc.es';
+var UTTERANCES_API = 'https://guides-comments.azurewebsites.net';
 exports.UTTERANCES_API = UTTERANCES_API;
 },{}],"oauth.ts":[function(require,module,exports) {
 "use strict";
@@ -639,7 +639,7 @@ var GITHUB_API = 'https://api.github.com/';
 var GITHUB_ENCODING__HTML_JSON = 'application/vnd.github.VERSION.html+json';
 var GITHUB_ENCODING__HTML = 'application/vnd.github.VERSION.html';
 var GITHUB_ENCODING__REACTIONS_PREVIEW = 'application/vnd.github.squirrel-girl-preview';
-var PAGE_SIZE = 25;
+var PAGE_SIZE = 4;
 exports.PAGE_SIZE = PAGE_SIZE;
 var reactionTypes = ['+1', '-1', 'laugh', 'hooray', 'confused', 'heart', 'rocket', 'eyes'];
 exports.reactionTypes = reactionTypes;
