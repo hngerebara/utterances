@@ -77,7 +77,7 @@ async function bootstrap() {
 
 bootstrap();
 
-addEventListener('not-installed', function handleNotInstalled() {
+this.addEventListener('not-installed', function handleNotInstalled() {
   removeEventListener('not-installed', handleNotInstalled);
   document.querySelector('.timeline')!.insertAdjacentHTML('afterbegin', `
   <div class="flash flash-error">

@@ -7,7 +7,7 @@ export function loadTheme(theme: string, origin: string) {
     link.href = `/stylesheets/themes/${theme}/utterances.css`;
     document.head.appendChild(link);
 
-    addEventListener('message', event => {
+    this.addEventListener('message', event => {
       if (event.origin === origin && event.data.type === 'set-theme') {
         link.href = `/stylesheets/themes/${event.data.theme}/utterances.css`;
       }

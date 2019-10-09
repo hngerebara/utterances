@@ -7,8 +7,8 @@ let hostOrigin: string;
 
 export function startMeasuring(origin: string) {
   hostOrigin = origin;
-  addEventListener('resize', scheduleMeasure);
-  addEventListener('load', scheduleMeasure);
+  this.addEventListener('resize', scheduleMeasure);
+  this.addEventListener('load', scheduleMeasure);
 }
 
 let lastHeight = -1;

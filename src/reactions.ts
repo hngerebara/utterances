@@ -73,7 +73,7 @@ export function enableReactions(authenticated: boolean) {
     button.disabled = false;
     scheduleMeasure();
   };
-  addEventListener('click', submitReaction, true);
+  this.addEventListener('click', submitReaction, true);
 }
 
 export function getReactionsMenuHtml(url: string, align: 'center' | 'right') {

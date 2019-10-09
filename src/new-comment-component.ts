@@ -182,8 +182,8 @@ function handleTextAreaResize(textarea: HTMLTextAreaElement) {
     removeEventListener('mouseup', stopTracking);
   };
   const track = () => {
-    addEventListener('mousemove', scheduleMeasure);
-    addEventListener('mouseup', stopTracking);
+    this.addEventListener('mousemove', scheduleMeasure);
+    this.addEventListener('mouseup', stopTracking);
   };
   textarea.addEventListener('mousedown', track);
 }
